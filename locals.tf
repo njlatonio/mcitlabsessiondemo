@@ -3,8 +3,8 @@ locals{
   forum="abracadabramcit"
 }
 output "print"{
-  value = local.servicename
+    value = local.servicename
 }
 output "secondprint"{
-  value = local.forum
+    value = local.forum
 }
