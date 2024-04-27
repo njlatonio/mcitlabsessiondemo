@@ -1,6 +1,8 @@
 locals{
   servicename="abracadabra"
   forum="abracadabramcit"
+  lengthsa=length(local.servicename)
+  lengthforum=length(local.forum)
   firstname="nichelle"
   lastname="latonio"
   city="montreal"
@@ -19,4 +21,10 @@ output "lastnameprint"{
 }
 output "cityprint"{
     value = local.city
+}
+output "lengthsa"{
+    value = local.lengthsa
+}
+output "lengthforum"{
+    value = local.lengthforum
 }
