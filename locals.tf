@@ -1,3 +1,4 @@
+/*
 locals{
   servicename="abracadabra"
   forum="abracadabramcit"
@@ -82,3 +83,4 @@ output "length_landmark4"{
 output "length_landmark5"{
     value = local.length_landmark5
 }
+*/
