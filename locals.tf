@@ -1,5 +1,5 @@
-/*
 locals{
+  /*
   servicename="abracadabra"
   forum="abracadabramcit"
   lengthsa=length(local.servicename)
@@ -10,6 +10,7 @@ locals{
   length_firstname=length(local.firstname)
   length_lastname=length(local.lastname)
   length_city=length(local.city)
+  
   #Homework from Friday April 26 2024
   landmark1="Saint-Joseph Oratory"
   landmark2="Notre-Dame Basilica"
@@ -21,7 +22,12 @@ locals{
   length_landmark3=length(local.landmark3)
   length_landmark4=length(local.landmark4)
   length_landmark5=length(local.landmark5)
+  */
+
+  #Class Monday April 29 2024
+  winterlistOfSports=["icehockey", "snowboarding", "iceskating"]
 }
+/*
 output "print"{
     value = local.servicename
 }
@@ -84,3 +90,7 @@ output "length_landmark5"{
     value = local.length_landmark5
 }
 */
+
+output "winterlistOfSports_output"{
+  value = local.winterlistOfSports_output"
+}
