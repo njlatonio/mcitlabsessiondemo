@@ -37,6 +37,7 @@ variable "environment"{
  default="staging"
 }
 
+/*
 #Added Class Monday April 29 2024
 
 variable "company_name"{
@@ -61,3 +62,4 @@ output "years_of_establishment_output"{
 output "ifelsecheck_output"{
   value = var.ifelsecheck
 }
+*/
