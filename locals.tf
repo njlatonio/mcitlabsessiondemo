@@ -92,5 +92,5 @@ output "length_landmark5"{
 */
 
 output "winterlistOfSports_output"{
-  value = local.winterlistOfSports_output"
+  value = local.winterlistOfSports_output
 }
