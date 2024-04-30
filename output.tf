@@ -71,7 +71,6 @@ output "years_of_establishment_output"{
 output "ifelsecheck_output"{
   value = var.ifelsecheck
 }
-*/
 
 output "wintersportslist"{
   value = [for sport in local.winterlistOfSports:sport]
@@ -88,6 +87,10 @@ output "MontrealRestaurantslist"{
 output "favouritefoodlist"{
     value=[for food in var.favouritefood:food]
 }
+*/
 output "sumofthreenumbers"{
     value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
+}
+output "sumlistOfNumbers"{
+    value=sum(local.listOfNumbers)
 }
