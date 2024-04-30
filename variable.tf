@@ -63,3 +63,8 @@ output "ifelsecheck_output"{
   value = var.ifelsecheck
 }
 */
+
+variable "summersports"{
+  type=list(string)
+  default=["soccer", "basketball","badminton","tabletennis"]
+}
