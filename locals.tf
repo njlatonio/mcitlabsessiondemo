@@ -28,5 +28,5 @@ locals{
   winterlistOfSports=["icehockey", "snowboarding", "iceskating"]
   MontrealUniversities=["Concordia", "McGill", "UdeM", "uQAM", "Polytechnique"]
   MontrealRestaurants=["McDonalds", "Harveys", "Tim Hortons", "Second cup", "Burger king"]
-  total_output=["50","100","150"]
+  total_output=["150","150","150"]
 }
