@@ -85,3 +85,6 @@ output "MontrealUniversitieslist"{
 output "MontrealRestaurantslist"{
   value = [for restaurant in local.MontrealRestaurants:restaurant]
 }
+output "favouritefoodlist"{
+    value=[for food in var.favouritefood:food]
+}
