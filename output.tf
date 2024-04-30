@@ -88,3 +88,6 @@ output "MontrealRestaurantslist"{
 output "favouritefoodlist"{
     value=[for food in var.favouritefood:food]
 }
+output "sumofthreenumbers"{
+    value=sum([for numberoutput in local.total_output: tonumber(numberoutput)]
+}
