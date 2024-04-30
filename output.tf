@@ -1,3 +1,4 @@
+/*
 output "print"{
     value = local.servicename
 }
