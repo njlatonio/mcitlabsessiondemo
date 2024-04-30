@@ -91,6 +91,8 @@ output "length_landmark5"{
 }
 */
 
+#Class Monday April 29 2024
 output "wintersportslist"{
   value = [for sport in local.winterlistOfSports:sport]
 }
+
