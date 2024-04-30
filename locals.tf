@@ -29,4 +29,5 @@ locals{
   MontrealUniversities=["Concordia", "McGill", "UdeM", "uQAM", "Polytechnique"]
   MontrealRestaurants=["McDonalds", "Harveys", "Tim Hortons", "Second cup", "Burger king"]
   total_output=["150","150","150"]
+  listOfNumbers=[4,5,1,2,3,4,5]
 }
