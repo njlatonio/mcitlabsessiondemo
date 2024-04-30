@@ -26,4 +26,6 @@ locals{
 
   #Class Monday April 29 2024
   winterlistOfSports=["icehockey", "snowboarding", "iceskating"]
+  MontrealUniversities=["Concordia", "McGill", "UdeM", "uQAM", "Polytechnique"]
+  MontrealRestaurants=["McDonalds", "Harveys", "Tim Hortons", "Second cup", "Burger king"]
 }
