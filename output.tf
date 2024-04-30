@@ -79,3 +79,9 @@ output "wintersportslist"{
 output "summersportslist"{
     value=[for summersport in var.summersports:summersport]
 }
+output "MontrealUniversitieslist"{
+  value = [for university in local.MontrealUniversities:university]
+}
+output "MontrealRestaurantslist"{
+  value = [for restaurant in local.MontrealRestaurants:restaurant]
+}
