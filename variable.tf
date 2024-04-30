@@ -39,7 +39,6 @@ variable "environment"{
 
 
 #Added Class Monday April 29 2024
-
 variable "company_name"{
   type=string
   default="MCIT"
@@ -56,4 +55,8 @@ variable "ifelsecheck"{
 variable "summersports"{
   type=list(string)
   default=["soccer", "basketball","badminton","tabletennis"]
+}
+variable "favouritefood"{
+  type=list(string)
+  defauilt=["pasta", "tacos", "chicken", "ice cream", "nutella"]
 }
