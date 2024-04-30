@@ -76,5 +76,6 @@ output "ifelsecheck_output"{
 output "wintersportslist"{
   value = [for sport in local.winterlistOfSports:sport]
 }
-
-
+output "summersportslist"{
+    value=[for summersport in var.summersports:summersport]
+}
