@@ -58,5 +58,5 @@ variable "summersports"{
 }
 variable "favouritefood"{
   type=list(string)
-  defauilt=["pasta", "tacos", "chicken", "ice cream", "nutella"]
+  default=["pasta", "tacos", "chicken", "ice cream", "nutella"]
 }
