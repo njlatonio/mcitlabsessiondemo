@@ -37,7 +37,7 @@ variable "environment"{
  default="staging"
 }
 
-/*
+
 #Added Class Monday April 29 2024
 
 variable "company_name"{
@@ -52,17 +52,6 @@ variable "ifelsecheck"{
   type=bool
   default=false
 }
-
-output "company_name_output"{
-  value = var.company_name
-}
-output "years_of_establishment_output"{
-  value = var.years_of_establishment
-}
-output "ifelsecheck_output"{
-  value = var.ifelsecheck
-}
-*/
 
 variable "summersports"{
   type=list(string)
