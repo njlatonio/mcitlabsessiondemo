@@ -60,9 +60,19 @@ output "length_landmark4"{
 output "length_landmark5"{
     value = local.length_landmark5
 }
-*/
 
 #Class Monday April 29 2024
+output "company_name_output"{
+  value = var.company_name
+}
+output "years_of_establishment_output"{
+  value = var.years_of_establishment
+}
+output "ifelsecheck_output"{
+  value = var.ifelsecheck
+}
+*/
+
 output "wintersportslist"{
   value = [for sport in local.winterlistOfSports:sport]
 }
