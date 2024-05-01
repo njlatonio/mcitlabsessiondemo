@@ -128,6 +128,11 @@ output "substring_example" {
   value = substr(var.Name_string, 0, 4)
 }
 
+# Function 7: Split the string by space into a list
+output "split_example" {
+  value = split(" ", var.Name_string)
+}
+
 # Function 8: Join a list of strings into a single string with a separator
 output "Name_list" {
     value = [for name in var.Name_list:name]
