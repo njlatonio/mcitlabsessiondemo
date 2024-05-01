@@ -154,3 +154,11 @@ output "reverse_example" {
 output "reverse_number" {
     value = reverse(var.num_list)
 }
+
+output "string_contains_no_sample" {
+  value = local.contains_keyword ? "String contains 'Mcit'" : "String does not contain 'Mcit'"
+}
+
+output "string_contains_sample" {
+  value = local.contains_keyword ? "String contains 'Montreal'" : "String does not contain 'Montreal'"
+}
