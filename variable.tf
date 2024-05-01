@@ -75,3 +75,8 @@ variable "additional_string" {
 variable "Name_list" {
   default = ["Nichelle", "Latonio"]
 }
+
+# Function 9: Trim leading and trailing whitespace
+variable "whitespace_string" {
+  default = "  Nichelle Latonio  "
+}
