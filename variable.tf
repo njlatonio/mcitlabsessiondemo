@@ -72,6 +72,6 @@ variable "additional_string" {
 }
 
 # Function 8: Join a list of strings into a single string with a separator
-variable "string_list" {
+variable "Name_list" {
   default = ["Nichelle", "Latonio"]
 }
