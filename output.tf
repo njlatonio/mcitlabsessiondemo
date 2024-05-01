@@ -113,7 +113,7 @@ output "lowercase_Name" {
   value = lower(var.Name_string)
 }
 
-# Function 4: Replace "Hello" with "Hi"
+# Function 4: Replace "Nichelle" with "Latonio"
 output "replaced_string" {
   value = replace(var.Name_string, "Nichelle", "Latonio")
 }
