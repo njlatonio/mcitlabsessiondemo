@@ -80,3 +80,7 @@ variable "Name_list" {
 variable "whitespace_string" {
   default = "  Nichelle Latonio  "
 }
+
+variable "num_list"{
+  default= [1,2,3]
+}
