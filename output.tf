@@ -125,7 +125,7 @@ output "concatenated_string" {
 
 # Function 6: Substring - Extract "Latonio" from the string
 output "substring_example" {
-  value = substr(var.original_string, 10, -1)
+  value = substr(var.Name_string, 0, 4)
 }
 
 # Function 8: Join a list of strings into a single string with a separator
