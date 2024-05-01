@@ -141,3 +141,12 @@ output "Name_list" {
 output "join_example" {
   value = join(".", var.Name_list)
 }
+
+# Function 9: Trim leading and trailing whitespace
+output "trimmed_string" {
+  value = trim(var.whitespace_string," ")
+}
+
+output "reverse_example" {
+  value = join("", reverse(split("", var.Name_string)))
+}
