@@ -99,7 +99,7 @@ output "sumlistOfNumbers"{
 
 //Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
 # Function 1: Length of the string
-output "string_Name" {
+output "length_string_Name" {
   value = length(var.Name_string)
 }
 
@@ -119,6 +119,10 @@ output "replaced_string" {
 }
 
 # Function 8: Join a list of strings into a single string with a separator
+output "Name_list" {
+    value = list(var.Name_list)
+}
+
 output "join_example" {
   value = join(".", var.string_list)
 }
