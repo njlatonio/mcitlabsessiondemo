@@ -38,7 +38,7 @@ variable "environment"{
 }
 
 
-#Added Class Monday April 29 2024
+//Class Monday April 29 2024--------------------------------------------------------------------------------------------------------------
 variable "company_name"{
   type=string
   default="MCIT"
@@ -59,4 +59,19 @@ variable "summersports"{
 variable "favouritefood"{
   type=list(string)
   default=["pasta", "tacos", "chicken", "ice cream", "nutella"]
+}
+
+//Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
+variable "original_string" {
+  default = "Montreal College of Information Technology"
+}
+
+# Function 5: Concatenate with another string
+variable "additional_string" {
+  default = " from Montreal"
+}
+
+# Function 8: Join a list of strings into a single string with a separator
+variable "string_list" {
+  default = ["Nichelle", "Latonio","Information"]
 }
