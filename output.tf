@@ -29,7 +29,8 @@ output "lengthlastname"{
 output "lengthcity"{
     value = local.length_city
 }
-#Homework from Friday April 26 2024
+
+//Homework from Friday April 26 2024-------------------------------------------------------------------------------------------------------
 output "landmark1"{
     value = local.landmark1
 }
@@ -61,7 +62,7 @@ output "length_landmark5"{
     value = local.length_landmark5
 }
 
-#Class Monday April 29 2024
+//Class Monday April 29 2024---------------------------------------------------------------------------------------------------------------
 output "company_name_output"{
   value = var.company_name
 }
@@ -87,10 +88,28 @@ output "MontrealRestaurantslist"{
 output "favouritefoodlist"{
     value=[for food in var.favouritefood:food]
 }
-*/
+
 output "sumofthreenumbers"{
     value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
 }
 output "sumlistOfNumbers"{
     value=sum(local.listOfNumbers)
+}
+*/
+
+//Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
+# Function 1: Length of the string
+output "string_FirstName" {
+  value = length(var.FirstName_string)
+}
+output "string_LastName" {
+  value = length(var.LastName_string)
+}
+
+# Function 2: Uppercase the string
+output "uppercase_FirstName" {
+  value = upper(var.FirstName_string)
+}
+output "uppercase_LastName" {
+  value = upper(var.LastName_string)
 }
