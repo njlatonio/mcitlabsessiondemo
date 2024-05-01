@@ -120,7 +120,7 @@ output "replaced_string" {
 
 # Function 8: Join a list of strings into a single string with a separator
 output "Name_list" {
-    value = list(var.Name_list)
+    value = [for name in var.Name_list:name]
 }
 
 output "join_example" {
