@@ -123,6 +123,11 @@ output "concatenated_string" {
   value = "${var.Name_string}${var.additional_string}"
 }
 
+# Function 6: Substring - Extract "Latonio" from the string
+output "substring_example" {
+  value = substr(var.original_string, 10, -1)
+}
+
 # Function 8: Join a list of strings into a single string with a separator
 output "Name_list" {
     value = [for name in var.Name_list:name]
