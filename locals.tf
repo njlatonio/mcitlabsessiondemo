@@ -11,7 +11,7 @@ locals{
   length_lastname=length(local.lastname)
   length_city=length(local.city)
   
-  #Homework from Friday April 26 2024
+  //Homework from Friday April 26 2024--------------------------------------------------------------------------------------------------
   landmark1="Saint-Joseph Oratory"
   landmark2="Notre-Dame Basilica"
   landmark3="Bell Centre"
@@ -24,7 +24,7 @@ locals{
   length_landmark5=length(local.landmark5)
   
 
-  #Class Monday April 29 2024
+  //Class Monday April 29 2024----------------------------------------------------------------------------------------------------------
   winterlistOfSports=["icehockey", "snowboarding", "iceskating"]
   MontrealUniversities=["Concordia", "McGill", "UdeM", "uQAM", "Polytechnique"]
   MontrealRestaurants=["McDonalds", "Harveys", "Tim Hortons", "Second cup", "Burger king"]
