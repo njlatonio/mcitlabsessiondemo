@@ -62,11 +62,8 @@ variable "favouritefood"{
 }
 
 //Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
-variable "FirstName_string" {
-  default = "Nichelle"
-}
-variable "LastName_string" {
-  default = "Latonio"
+variable "Name_string" {
+  default = "Nichelle Latonio"
 }
 
 # Function 5: Concatenate with another string
@@ -76,5 +73,5 @@ variable "additional_string" {
 
 # Function 8: Join a list of strings into a single string with a separator
 variable "string_list" {
-  default = ["Nichelle", "Latonio","Information"]
+  default = ["Nichelle", "Latonio"]
 }
