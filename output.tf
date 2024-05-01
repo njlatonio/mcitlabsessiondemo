@@ -113,3 +113,20 @@ output "uppercase_FirstName" {
 output "uppercase_LastName" {
   value = upper(var.LastName_string)
 }
+
+# Function 3: Lowercase the string
+output "lowercase_FirstName" {
+  value = lower(var.FirstName_string)
+}
+output "lowercase_LastName" {
+  value = lower(var.LastName_string)
+}
+
+# Function 4: Replace "Hello" with "Hi"
+output "replaced_string" {
+  value = replace(var.FirstName_string, "Nichelle", "Joy")
+}
+
+output "concatenated_string" {
+  value = "${var.FirstName_string}$"."${var.LastName_string}"
+}
