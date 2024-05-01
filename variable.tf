@@ -62,8 +62,11 @@ variable "favouritefood"{
 }
 
 //Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
-variable "original_string" {
-  default = "Montreal College of Information Technology"
+variable "FirstName_string" {
+  default = "Nichelle"
+}
+variable "LastName_string" {
+  default = "Latonio"
 }
 
 # Function 5: Concatenate with another string
