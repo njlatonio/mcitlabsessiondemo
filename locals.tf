@@ -30,4 +30,11 @@ locals{
   MontrealRestaurants=["McDonalds", "Harveys", "Tim Hortons", "Second cup", "Burger king"]
   total_output=["150","150","150"]
   listOfNumbers=[4,5,1,2,3,4,5]
+
+  //Class Wednesday May 1 2024----------------------------------------------------------------------------------------------------------
+  locals {
+  contains_keyword = contains(split(" ", var.Name_string), "Montreal")
 }
+
+}
+
