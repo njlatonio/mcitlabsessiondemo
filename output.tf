@@ -150,3 +150,7 @@ output "trimmed_string" {
 output "reverse_example" {
   value = join("", reverse(split("", var.Name_string)))
 }
+
+output "reverse_number" {
+    value = reverse(var.num_list)
+}
