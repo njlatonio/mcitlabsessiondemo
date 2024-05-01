@@ -124,5 +124,5 @@ output "Name_list" {
 }
 
 output "join_example" {
-  value = join(".", var.string_list)
+  value = join(".", var.Name_list)
 }
