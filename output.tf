@@ -99,34 +99,26 @@ output "sumlistOfNumbers"{
 
 //Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
 # Function 1: Length of the string
-output "string_FirstName" {
-  value = length(var.FirstName_string)
-}
-output "string_LastName" {
-  value = length(var.LastName_string)
+output "string_Name" {
+  value = length(var.Name_string)
 }
 
 # Function 2: Uppercase the string
-output "uppercase_FirstName" {
-  value = upper(var.FirstName_string)
-}
-output "uppercase_LastName" {
-  value = upper(var.LastName_string)
+output "uppercase_Name" {
+  value = upper(var.Name_string)
 }
 
 # Function 3: Lowercase the string
-output "lowercase_FirstName" {
-  value = lower(var.FirstName_string)
-}
-output "lowercase_LastName" {
-  value = lower(var.LastName_string)
+output "lowercase_Name" {
+  value = lower(var.Name_string)
 }
 
 # Function 4: Replace "Hello" with "Hi"
 output "replaced_string" {
-  value = replace(var.FirstName_string, "Nichelle", "Joy")
+  value = replace(var.Name_string, "Nichelle", "Latonio")
 }
 
-output "concatenated_string" {
-  value = "${var.FirstName_string}$"."${var.LastName_string}"
+# Function 8: Join a list of strings into a single string with a separator
+output "join_example" {
+  value = join(".", var.string_list)
 }
