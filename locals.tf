@@ -32,7 +32,7 @@ locals{
   listOfNumbers=[4,5,1,2,3,4,5]
 
   //Class Wednesday May 1 2024----------------------------------------------------------------------------------------------------------
-  contains_keyword = contains(split(" ", var.Name_string), "Montreal")
+  contains_keyword = contains(split(" ", var.Name_string), "Nichelle")
 
 }
 
