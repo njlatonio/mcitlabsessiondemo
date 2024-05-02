@@ -1,5 +1,5 @@
 locals{
-  #Class Friday April 26 2024
+  //Class Friday April 26 2024-----------------------------------------------------------------------------------------------------------
   servicename="abracadabra"
   forum="abracadabramcit"
   lengthsa=length(local.servicename)
