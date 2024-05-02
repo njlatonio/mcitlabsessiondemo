@@ -156,9 +156,9 @@ output "reverse_number" {
 }
 
 output "string_contains_no_sample" {
-  value = local.contains_keyword ? "String contains 'Mcit'" : "String does not contain 'Mcit'"
+  value = local.contains_keyword "Mcit" "String contains 'Mcit'" : "String does not contain 'Mcit'"
 }
 
 output "string_contains_sample" {
-  value = local.contains_keyword ? "String contains 'Nichelle'" : "String does not contain 'Nichelle'"
+  value = local.contains_keyword "Nichelle" "String contains 'Nichelle'" : "String does not contain 'Nichelle'"
 }
