@@ -180,3 +180,11 @@ output "contains_Canada" {
 output "string_contains_Canada" {
     value = local.contains_word ? "String contains 'Canada"" : "String does not contain 'Canada'"
 }
+
+output "merge_string"{
+    value = "${var.string1}${var.string2}"
+}
+
+output "merge_string_trim"{
+    value = "${var.string1}${trim(var.string2,"")}"
+}
