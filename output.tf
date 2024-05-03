@@ -166,5 +166,5 @@ output "string_contains_sample" {
 
 //Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------
 output "five_countries_list" {
-    value = joint("+", var.five_countries)
+    value = join("+", var.five_countries)
 }
