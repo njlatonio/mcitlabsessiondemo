@@ -166,5 +166,5 @@ output "string_contains_sample" {
 
 //Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------
 output "five_countries_list" {
-    value = var.five_countries
+    value = [for country in var.five_countries:country]
 }
