@@ -186,5 +186,5 @@ output "merge_string" {
 }
 
 output "merge_string_trim" {
-    value = "${var.string1}${trim(var.string2," ")}"
+    value = "${var.string1}${" "}${trim(var.string2," ")}"
 }
