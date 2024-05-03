@@ -194,5 +194,5 @@ output "string3"{
 }
 
 output "string3_modified"{
-    value = "${upper(substr(var.string3, 0, 4))}${" "}${lower(substr(var.string3, 6, -1))}
+    value = "${upper(substr(var.string3, 0, 4))}${" "}${lower(substr(var.string3, 6, -1))}"
 }
