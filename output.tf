@@ -168,3 +168,7 @@ output "string_contains_sample" {
 output "five_countries_list" {
     value = [for country in var.five_countries:country]
 }
+
+output "join_countries"{
+    value = join("+", var.five_countries)
+}
