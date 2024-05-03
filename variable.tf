@@ -84,3 +84,7 @@ variable "whitespace_string" {
 variable "num_list"{
   default= [1,2,3]
 }
+
+variable "five_countries"{
+  default = ["Belgium", "Netherlands", "Greece", "Thailand", "Japan"]
+}
