@@ -177,3 +177,6 @@ output "contains_Canada" {
     value = local.contains_word
 }
 
+output "string_contains_Canada" {
+    value = local.contains_word ? "String contains 'Canada"" : "String does not contain 'Canada'"
+}
