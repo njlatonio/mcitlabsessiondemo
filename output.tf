@@ -195,7 +195,6 @@ output "string3"{
 output "string3_modified"{
     value = "${upper(substr(var.string3, 0, 5))}${" "}${lower(substr(var.string3, 6, -1))}"
 }
-*/
 
 //Class Friday May 3 2024---------------------------------------------------------------------------------------------------------------
 output "simple_nested_list"{
@@ -212,4 +211,15 @@ output "nested_map" {
 
 output "flattened_map" {
     value = local.flattened_map
+}
+*/
+
+output "character_enemy_output" {
+    value = var.character_enemy_map
+}
+
+output "character_mapping" {
+    value = {for index, character in locals.characters: #Converts character list to a set
+            character => locals.enemies_destroyed[index]
+    }
 }
