@@ -85,6 +85,7 @@ variable "num_list"{
   default= [1,2,3]
 }
 
+//Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------------
 variable "five_countries"{
   default = ["Belgium", "Netherlands", "Greece", "Thailand", "Japan"]
 }
