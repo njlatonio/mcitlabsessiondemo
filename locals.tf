@@ -35,7 +35,7 @@ locals{
   contains_keyword = contains(split(" ", var.Name_string), "Nichelle")
 
   //Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------
-  //contains_word = contains(split(" ", var.five_countries), "Canada")
+  contains_word = contains(var.five_countries, "Canada")
 
 }
 
