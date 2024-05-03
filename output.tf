@@ -162,7 +162,6 @@ output "string_contains_no_sample" {
 output "string_contains_sample" {
   value = local.contains_keyword ? "String contains 'Nichelle'" : "String does not contain 'Nichelle'"
 }
-*/
 
 //Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------
 output "five_countries_list" {
@@ -195,4 +194,10 @@ output "string3"{
 
 output "string3_modified"{
     value = "${upper(substr(var.string3, 0, 5))}${" "}${lower(substr(var.string3, 6, -1))}"
+}
+*/
+
+//Class Friday May 3 2024---------------------------------------------------------------------------------------------------------------
+output "simple_local_flattened_list" {
+    value = local.simple_local_flattened_list
 }
