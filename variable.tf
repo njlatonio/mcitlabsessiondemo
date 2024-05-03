@@ -61,6 +61,7 @@ variable "favouritefood"{
   default=["pasta", "tacos", "chicken", "ice cream", "nutella"]
 }
 
+
 //Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
 variable "Name_string" {
   default = "Nichelle Latonio"
@@ -85,6 +86,7 @@ variable "num_list"{
   default= [1,2,3]
 }
 
+
 //Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------------
 variable "five_countries"{
   default = ["Belgium", "Netherlands", "Greece", "Thailand", "Japan"]
@@ -100,4 +102,11 @@ variable "string2"{
 
 variable "string3"{
   default = "upper LOWER"
+}
+
+
+//Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
+variable = "simple_nested_list" {
+  type = list(list(string))
+  default = [["a","b"],["c","d"],["e","f"]]
 }
