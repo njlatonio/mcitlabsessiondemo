@@ -173,6 +173,7 @@ output "join_countries"{
     value = join("+", var.five_countries)
 }
 
-ouput "contains_Canada" {
+output "contains_Canada" {
     value = local.contains_word
 }
+
