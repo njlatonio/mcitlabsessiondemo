@@ -206,6 +206,7 @@ output "simple_local_flattened_list" {
     value = local.simple_local_flattened_list
 }
 
-output "flattened_map" {
-    value = local.flattened_map
+output "nested_map" {
+    value = [for value in var.nested_map:value]
 }
+
