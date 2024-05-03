@@ -119,4 +119,3 @@ variable "nested_map" {
   }
 }
 
-}
