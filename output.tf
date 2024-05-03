@@ -96,7 +96,6 @@ output "sumofthreenumbers"{
 output "sumlistOfNumbers"{
     value=sum(local.listOfNumbers)
 }
-*/
 
 //Class Wednesday May 1 2024---------------------------------------------------------------------------------------------------------------
 # Function 1: Length of the string
@@ -164,4 +163,10 @@ output "string_contains_no_sample" {
 
 output "string_contains_sample" {
   value = local.contains_keyword ? "String contains 'Nichelle'" : "String does not contain 'Nichelle'"
+}
+*/
+
+//Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------
+output "five_countries_list" {
+    value = joint("+", var.five_countries)
 }
