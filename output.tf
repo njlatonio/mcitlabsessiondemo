@@ -214,6 +214,14 @@ output "flattened_map" {
 }
 */
 
+output "characters" {
+    value = local.characters
+}
+
+output "enemies_destroyed" {
+    value = local.enemies_destroyed
+}
+
 output "character_enemy_output" {
     value = var.character_enemy_map
 }
