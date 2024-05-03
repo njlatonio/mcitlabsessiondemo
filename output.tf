@@ -223,7 +223,7 @@ output "enemies_destroyed" {
 }
 
 output "character_enemy_output" {
-    value = var.character_enemy_map
+    value = local.character_enemy_map
 }
 
 output "character_mapping" {
