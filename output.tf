@@ -188,3 +188,11 @@ output "merge_string" {
 output "merge_string_trim" {
     value = "${var.string1}${" "}${trim(var.string2," ")}"
 }
+
+output "string3"{
+    value = var.string3
+}
+
+output "string3_modified"{
+    value = "${upper(substr(var.string3, 0, 4))}${" "}${lower(substr(var.string3, 6, -1))}
+}
