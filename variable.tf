@@ -97,3 +97,7 @@ variable "string1"{
 variable "string2"{
   default = "Canada "
 }
+
+variable "string3"{
+  default = "upper LOWER"
+}
