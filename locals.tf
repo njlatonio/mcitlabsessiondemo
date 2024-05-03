@@ -22,7 +22,6 @@ locals{
   length_landmark3=length(local.landmark3)
   length_landmark4=length(local.landmark4)
   length_landmark5=length(local.landmark5)
-  
 
   //Class Monday April 29 2024----------------------------------------------------------------------------------------------------------
   winterlistOfSports=["icehockey", "snowboarding", "iceskating"]
@@ -37,5 +36,7 @@ locals{
   //Homework Wednesday May 1 2024-------------------------------------------------------------------------------------------------------
   contains_word = contains(var.five_countries, "Canada")
 
+  //Class Friday May 3 2024-------------------------------------------------------------------------------------------------------------
+  simple_local_flattened_list = flatten(var.simple_nested_list)
 }
 
