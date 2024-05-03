@@ -89,3 +89,11 @@ variable "num_list"{
 variable "five_countries"{
   default = ["Belgium", "Netherlands", "Greece", "Thailand", "Japan"]
 }
+
+variable "string1"{
+  default = "I love"
+}
+
+variable "string2"{
+  default = "Canada "
+}
