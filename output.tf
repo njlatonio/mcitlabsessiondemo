@@ -227,7 +227,7 @@ output "character_enemy_output" {
 }
 
 output "character_mapping" {
-    value = {for index, character in locals.characters: #Converts character list to a set
-            character => locals.enemies_destroyed[index]
+    value = {for index, character in local.characters: #Converts character list to a set
+            character => local.enemies_destroyed[index]
     }
 }
