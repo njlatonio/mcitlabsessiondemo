@@ -198,6 +198,10 @@ output "string3_modified"{
 */
 
 //Class Friday May 3 2024---------------------------------------------------------------------------------------------------------------
+output "simple_nested_list"{
+    value = var.simple_nested_list
+}
+
 output "simple_local_flattened_list" {
     value = local.simple_local_flattened_list
 }
