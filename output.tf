@@ -199,7 +199,7 @@ output "string3_modified"{
 
 //Class Friday May 3 2024---------------------------------------------------------------------------------------------------------------
 output "simple_nested_list"{
-    value = var.simple_nested_list
+    value = [for letter in var.simple_nested_list:letter]
 }
 
 output "simple_local_flattened_list" {
