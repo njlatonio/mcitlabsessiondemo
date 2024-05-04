@@ -123,3 +123,8 @@ variable "number_list" {
   default = ["724", "238", "219", "291", "555"]
 }
 
+variable "nested_number_list" {
+  type = list(list(number))
+  default = [2,2,2], [1,2,3], [2,3,2], [3,1,3]
+}
+
