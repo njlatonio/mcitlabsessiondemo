@@ -48,5 +48,10 @@ locals{
   }
   #Map example end ====================================================================================
 
+  presidents = ["Obama", "Justin", "Kim Jong Un"]
+  countries = ["United States", "Canada", "North Korea"]
+  presidents_countries_map = { for index, president in local.presidents: president => local.countries[index]
+  }
+
 }
 
