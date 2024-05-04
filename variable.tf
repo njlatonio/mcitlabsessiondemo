@@ -157,3 +157,7 @@ variable "total_output" {
   type    = list(string)
   default = ["150", "150", "150"]
 }
+
+variable "winterlistOfSports" {
+  default = ["icehockey","snowboarding","iceskating"]
+}
