@@ -236,6 +236,14 @@ output "sum_number_list"{
     value= sum([for number in var.number_list:number])
 }
 
+output "presidents" {
+    value = local.presidents
+}
+
+output "countries" {
+    value = local.countries
+}
+
 output "president_country_mapping" {
     value = local.presidents_countries_map
 }
