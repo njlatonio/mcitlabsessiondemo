@@ -270,5 +270,5 @@ output "incremented_output" {
 }
 
 output "count_check" {
-    value = count(var.winterlistOfSports)
+    value = var.winterlistOfSports[count.index]
 }
