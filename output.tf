@@ -240,4 +240,6 @@ output "president_country_mapping" {
     value = local.president_country_map
 }
 
-
+output "nested_number_list" {
+    value = [for number in var.nested_number_list:number]
+}
