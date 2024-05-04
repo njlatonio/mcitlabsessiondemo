@@ -231,7 +231,6 @@ output "character_mapping" {
     }
 }
 
-*/
 output "sum_number_list"{
     value= sum([for number in var.number_list:number])
 }
@@ -250,4 +249,9 @@ output "president_country_mapping" {
 
 output "nested_number_list" {
     value = [for number in var.nested_number_list:number]
+}
+
+*/
+output "user_roles_result" {
+  value = local.user_role_lookup
 }
