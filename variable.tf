@@ -128,3 +128,15 @@ variable "nested_number_list" {
   default = [[2,2,2], [1,2,3], [2,3,2], [3,1,3]]
 }
 
+variable "user_roles" {
+  type    = map(string)
+  default = {
+    alice = "admin"
+    bob   = "editor"
+    charlie = "viewer"
+  }
+}
+variable "default_role" {
+  type    = string
+  default = "guest"
+}
