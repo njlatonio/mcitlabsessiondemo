@@ -111,13 +111,13 @@ variable "simple_nested_list" {
   default = [["a","b"],["c","d"],["e","f"]]
 }
 
-variable "nested_map" {
-  type = map(map(string))
-  default = {
-  group1 = {"name" = "Alice", "age" = "25"}
-  group2 = {"name" = "Bob", "age" = "30"}
-  }
-}
+#variable "nested_map" {
+#  type = map(map(string))
+#  default = {
+#  group1 = {"name" = "Alice", "age" = "25"}
+#  group2 = {"name" = "Bob", "age" = "30"}
+#  }
+#}
 
 variable "number_list" {
   default = ["724", "238", "219", "291", "555"]
@@ -141,3 +141,6 @@ variable "default_role" {
   type    = string
   default = "guest"
 }
+
+
+//Homework Friday May 3 2024--------------------------------------------------------------------------------------------------------------
