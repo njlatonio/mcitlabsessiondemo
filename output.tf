@@ -269,6 +269,6 @@ output "incremented_output" {
     value = [for number in var.total_output:(number+10)]
 }
 
-output "count_check" {
-    value = length(var.winterlistOfSports)
+output "winterlistOfSpots_condition1" {
+    value = length(var.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
 }
