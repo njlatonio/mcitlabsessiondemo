@@ -212,7 +212,6 @@ output "nested_map" {
 output "flattened_map" {
     value = local.flattened_map
 }
-*/
 
 output "characters" {
     value = local.characters
@@ -230,4 +229,9 @@ output "character_mapping" {
     value = {for index, character in local.characters: #Converts character list to a set
             character => local.enemies_destroyed[index]
     }
+}
+
+*/
+output "sum_number_list"{
+    value= sum([for number in var.number_list:number])
 }
