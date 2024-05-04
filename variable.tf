@@ -125,6 +125,6 @@ variable "number_list" {
 
 variable "nested_number_list" {
   type = list(list(number))
-  default = [2,2,2], [1,2,3], [2,3,2], [3,1,3]
+  default = [[2,2,2], [1,2,3], [2,3,2], [3,1,3]]
 }
 
