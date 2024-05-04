@@ -264,3 +264,7 @@ output "user_roles_result" {
 output "nested_map" {
     value = [for value in var.nested_map:value]
 }
+
+output "incremented_output" {
+    value = [for number in var.total_output:(number+10)]
+}
