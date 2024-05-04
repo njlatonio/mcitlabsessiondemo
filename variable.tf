@@ -136,6 +136,7 @@ variable "user_roles" {
     charlie = "viewer"
   }
 }
+
 variable "default_role" {
   type    = string
   default = "guest"
