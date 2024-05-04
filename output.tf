@@ -269,6 +269,10 @@ output "incremented_output" {
     value = [for number in var.total_output:(number+10)]
 }
 
-output "winterlistOfSpots_condition1" {
+output "winterlistOfSports_condition" {
     value = length(var.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
+}
+
+output "winterlistOfSports_ext_condition" {
+    value = length(var.winterlistOfSports_ext) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
 }
