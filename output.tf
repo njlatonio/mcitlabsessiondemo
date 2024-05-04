@@ -205,9 +205,9 @@ output "simple_local_flattened_list" {
     value = local.simple_local_flattened_list
 }
 
-output "nested_map" {
-    value = [for value in var.nested_map:value]
-}
+#output "nested_map" {
+#    value = [for value in var.nested_map:value]
+#}
 
 output "flattened_map" {
     value = local.flattened_map
@@ -251,11 +251,13 @@ output "nested_number_list" {
     value = [for number in var.nested_number_list:number]
 }
 
-*/
 output "flattened_number_list" {
     value = local.flattened_number_list
 }
 
-#output "user_roles_result" {
-#  value = local.user_role_lookup
-#}
+output "user_roles_result" {
+  value = local.user_role_lookup
+}
+
+*/
+//Homework Friday May 3 2024-----------------------------------------------------------------------------------------------------------
