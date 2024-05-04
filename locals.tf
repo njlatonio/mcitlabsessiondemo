@@ -54,5 +54,12 @@ locals{
   }
   flattened_number_list = flatten(var.nested_number_list)
 
+  user_role_lookup = {
+    alice   = lookup(var.user_roles, "alice", var.default_role)
+    bob     = lookup(var.user_roles, "bob", var.default_role)
+    david   = lookup(var.user_roles, "david", var.default_role)
+  }
+
+
 }
 
