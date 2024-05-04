@@ -251,6 +251,7 @@ output "nested_number_list" {
     value = [for number in var.nested_number_list:number]
 }
 
+*/
 output "flattened_number_list" {
     value = local.flattened_number_list
 }
