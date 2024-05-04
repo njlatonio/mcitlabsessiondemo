@@ -268,3 +268,7 @@ output "nested_map" {
 output "incremented_output" {
     value = [for number in var.total_output:(number+10)]
 }
+
+output "count_check" {
+    value = count.winterlistOfSports
+}
