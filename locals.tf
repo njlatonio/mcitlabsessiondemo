@@ -52,7 +52,7 @@ locals{
   countries = ["United States", "Canada", "North Korea"]
   presidents_countries_map = { for index, president in local.presidents: president => local.countries[index]
   }
-  flattened_number_list: flatten(var.nested_number_list)
+  flattened_number_list = flatten(var.nested_number_list)
 
 }
 
