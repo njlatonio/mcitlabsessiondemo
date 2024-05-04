@@ -261,3 +261,6 @@ output "user_roles_result" {
 
 */
 //Homework Friday May 3 2024-----------------------------------------------------------------------------------------------------------
+output "nested_map" {
+    value = [for value in var.nested_map:value]
+}
