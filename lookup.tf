@@ -1,3 +1,6 @@
+/*
+
+//Class Friday May 3 2024------------------------------------------------------------------------------------------------------------------
 variable "user_roles" {
   type    = map(string)
   default = {
@@ -22,3 +25,4 @@ locals {
 output "user_roles_result" {
   value = local.user_role_lookup
 }
+*/
