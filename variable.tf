@@ -119,3 +119,7 @@ variable "nested_map" {
   }
 }
 
+variable "number_list" {
+  default = ["724", "238", "219", "291", "555"]
+}
+
