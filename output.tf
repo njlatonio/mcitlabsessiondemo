@@ -235,3 +235,9 @@ output "character_mapping" {
 output "sum_number_list"{
     value= sum([for number in var.number_list:number])
 }
+
+output "president_country_mapping" {
+    value = local.president_country_map
+}
+
+
