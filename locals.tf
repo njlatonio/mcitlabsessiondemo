@@ -60,8 +60,5 @@ locals{
     david   = lookup(var.user_roles, "david", var.default_role)
   }
 
-  //Homework Friday May 3 2024---------------------------------------------------------------------------------------------------------
-  
-
 }
 
