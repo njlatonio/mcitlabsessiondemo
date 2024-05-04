@@ -38,7 +38,7 @@ locals{
 
   //Class Friday May 3 2024-------------------------------------------------------------------------------------------------------------
   simple_local_flattened_list = flatten(var.simple_nested_list)
-  flattened_map  = flatten([for k, v in var.nested_map : [for kk, vv in v : { group = k, key = kk, value = vv }]])
+  #flattened_map  = flatten([for k, v in var.nested_map : [for kk, vv in v : { group = k, key = kk, value = vv }]])
   
   #Map example start ==================================================================================
   characters = ["luke", "yoda", "darth"]
