@@ -11,7 +11,7 @@ locals{
   length_lastname=length(local.lastname)
   length_city=length(local.city)
   
-  //Homework from Friday April 26 2024--------------------------------------------------------------------------------------------------
+  //Homework Friday April 26 2024-------------------------------------------------------------------------------------------------------
   landmark1="Saint-Joseph Oratory"
   landmark2="Notre-Dame Basilica"
   landmark3="Bell Centre"
@@ -24,10 +24,10 @@ locals{
   length_landmark5=length(local.landmark5)
 
   //Class Monday April 29 2024----------------------------------------------------------------------------------------------------------
-  winterlistOfSports=["icehockey", "snowboarding", "iceskating"]
+  #winterlistOfSports=["icehockey", "snowboarding", "iceskating"]
   MontrealUniversities=["Concordia", "McGill", "UdeM", "uQAM", "Polytechnique"]
   MontrealRestaurants=["McDonalds", "Harveys", "Tim Hortons", "Second cup", "Burger king"]
-  total_output=["150","150","150"]
+  #total_output=["150","150","150"]
   listOfNumbers=[4,5,1,2,3,4,5]
 
   //Class Wednesday May 1 2024----------------------------------------------------------------------------------------------------------
@@ -60,6 +60,8 @@ locals{
     david   = lookup(var.user_roles, "david", var.default_role)
   }
 
+  //Homework Friday May 3 2024---------------------------------------------------------------------------------------------------------
+  
 
 }
 
