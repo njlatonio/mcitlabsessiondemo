@@ -152,3 +152,8 @@ variable "nested_map" {
     group3 = {"name" = "Charlie", "age" = "35"}
   }
 }
+
+variable "total_output" {
+  type    = list(string)
+  default = ["150", "150", "150"]
+}
