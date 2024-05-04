@@ -237,7 +237,7 @@ output "sum_number_list"{
 }
 
 output "president_country_mapping" {
-    value = local.president_country_map
+    value = local.presidents_countries_map
 }
 
 output "nested_number_list" {
