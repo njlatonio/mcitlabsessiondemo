@@ -161,3 +161,7 @@ variable "total_output" {
 variable "winterlistOfSports" {
   default = ["icehockey","snowboarding","iceskating"]
 }
+
+variable "winterlistOfSports_ext" {
+  default = ["icehockey","snowboarding","iceskating","sledging"]
+}
