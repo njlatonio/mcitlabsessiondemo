@@ -74,9 +74,9 @@ output "ifelsecheck_output"{
   value = var.ifelsecheck
 }
 
-output "wintersportslist"{
-  value = [for sport in local.winterlistOfSports:sport]
-}
+#output "wintersportslist"{
+#  value = [for sport in local.winterlistOfSports:sport]
+#}
 output "summersportslist"{
     value=[for summersport in var.summersports:summersport]
 }
@@ -90,9 +90,9 @@ output "favouritefoodlist"{
     value=[for food in var.favouritefood:food]
 }
 
-output "sumofthreenumbers"{
-    value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
-}
+#output "sumofthreenumbers"{
+#    value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
+#}
 output "sumlistOfNumbers"{
     value=sum(local.listOfNumbers)
 }
