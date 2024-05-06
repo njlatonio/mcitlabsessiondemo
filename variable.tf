@@ -165,3 +165,8 @@ variable "winterlistOfSports" {
 variable "winterlistOfSports_ext" {
   default = ["icehockey","snowboarding","iceskating","sledging"]
 }
+
+
+//Exam Friday May 3 2024-----------------------------------------------------------------------------------------------------------------
+
+
