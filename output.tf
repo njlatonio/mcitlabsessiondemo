@@ -298,6 +298,6 @@ output "nested_numberList" {        #Question 13
     value = var.nested_numberList
 }
 
-output "flatten_nested_numberList" {        #Question 13
-    value = local.flatten_nested_numberList
+output "flatten_number_list" {        #Question 13
+    value = local.flatten_number_list
 }
