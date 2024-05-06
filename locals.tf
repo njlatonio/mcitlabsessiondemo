@@ -62,9 +62,10 @@ locals{
 
 
   //Exam Monday May 6 2024-----------------------------------------------------------------------------------------------------------------
-  clouds = ["azure","aws","gcp"]
-  contains_azure = contains(local.clouds, "azure")
-  clouds_ext = ["azure","aws","gcp","alibaba","ibm"]
+  clouds = ["azure","aws","gcp"] #Question 10
+  contains_azure = contains(local.clouds, "azure") #Question 10
+  clouds_ext = ["azure","aws","gcp","alibaba","ibm"] #Question 11
+  cloud_owners  = ["Microsoft","Amazon","Google"] #Question 12
 
 }
 
