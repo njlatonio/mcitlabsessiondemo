@@ -283,7 +283,7 @@ output "local_clouds" {
 }
 
 output "variable_clouds" {
-    value = [for value in var.clouds:clouds]
+    value = [for value in var.clouds:value]
 }
 
 output "azure_condition" {
