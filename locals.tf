@@ -63,8 +63,8 @@ locals{
 
   //Exam Friday May 3 2024-----------------------------------------------------------------------------------------------------------------
   clouds = {
-  type=list(string)
-  value = ["azure","aws","gcp"]
+    type=list(string)
+    value = ["azure","aws","gcp"]
   }
 
 }
