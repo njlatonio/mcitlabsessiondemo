@@ -62,10 +62,9 @@ locals{
 
 
   //Exam Friday May 3 2024-----------------------------------------------------------------------------------------------------------------
-  clouds = {
-    type=list(string)
-    value = ["azure","aws","gcp"]
-  }
+  clouds = ["azure","aws","gcp"]
+  contains_azure = contains.(local.clouds, "Azure")
+  
 
 }
 
