@@ -60,5 +60,12 @@ locals{
     david   = lookup(var.user_roles, "david", var.default_role)
   }
 
+
+  //Exam Friday May 3 2024-----------------------------------------------------------------------------------------------------------------
+  clouds = {
+  type=list(string)
+  value = ["azure","aws","gcp"]
+  }
+
 }
 
