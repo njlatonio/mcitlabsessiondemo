@@ -293,3 +293,7 @@ output "clouds_ext" {        #Question 11
 output "cloud_map" {        #Question 12
     value = local.cloud_map
 }
+
+output "nested_numberList" {        #Question 13
+    value = var.nested_numberList
+}
