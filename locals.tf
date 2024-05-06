@@ -66,6 +66,6 @@ locals{
   contains_azure = contains(local.clouds, "azure") #Question 10
   clouds_ext = ["azure","aws","gcp","alibaba","ibm"] #Question 11
   cloud_owners  = ["Microsoft","Amazon","Google"] #Question 12
-
+  cloud_map = { for index, cloud in local.clouds : cloud => local.cloud_owners[index] } #Question 12
 }
 
