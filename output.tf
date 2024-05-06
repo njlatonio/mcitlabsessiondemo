@@ -281,6 +281,11 @@ output "winterlistOfSports_ext_condition" {
 output "local_clouds" {
     value = local.clouds
 }
+
 output "variable_clouds" {
     value = [for value in var.clouds:clouds]
+}
+
+output "azure_condition" {
+    value = local.contains_azure ? "azure is part of the cloud list" : "azure is not part of the cloud list"
 }
