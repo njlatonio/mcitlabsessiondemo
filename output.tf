@@ -301,3 +301,8 @@ output "nested_numberList" {        #Question 13
 output "flatten_number_list" {        #Question 13
     value = local.flatten_number_list
 }
+
+output "sum_flatten_number_list" {        #Question 13
+    value = sum(local.flatten_number_list
+}
+
