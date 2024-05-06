@@ -168,5 +168,8 @@ variable "winterlistOfSports_ext" {
 
 
 //Exam Monday May 6 2024------------------------------------------------------------------------------------------------------------------
-
+#variable "clouds_map" {
+#  type = map(map(string))
+#  default = {
+  
 
