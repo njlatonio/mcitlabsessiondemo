@@ -303,6 +303,6 @@ output "flatten_number_list" {        #Question 13
 }
 
 output "sum_flatten_number_list" {        #Question 13
-    value = sum(local.flatten_number_list
+    value = sum(local.flatten_number_list)
 }
 
