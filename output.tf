@@ -278,14 +278,14 @@ output "winterlistOfSports_ext_condition" {
 
 */
 //Exam Monday May 6 2024------------------------------------------------------------------------------------------------------------
-output "local_clouds" {
+output "clouds" {
     value = local.clouds
-}
-
-output "variable_clouds" {
-    value = [for value in var.clouds:value]
 }
 
 output "azure_condition" {
     value = local.contains_azure ? "azure is part of the cloud list" : "azure is not part of the cloud list"
+}
+
+output "clouds_ext" {
+    value = local.clouds_ext
 }
