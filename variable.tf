@@ -168,7 +168,7 @@ variable "winterlistOfSports_ext" {
 
 
 //Exam Monday May 6 2024------------------------------------------------------------------------------------------------------------------
-variable "nested_numberList" {
+variable "nested_numberList" {    #Question 13
   type =  list(list(number))
   default = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
 }
