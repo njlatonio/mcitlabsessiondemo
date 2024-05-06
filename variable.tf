@@ -168,5 +168,8 @@ variable "winterlistOfSports_ext" {
 
 
 //Exam Friday May 3 2024-----------------------------------------------------------------------------------------------------------------
-
+variable "clouds" {
+  type = list(string)
+  default = ["azure","aws","gcp"]
+}
 
