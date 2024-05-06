@@ -63,7 +63,7 @@ locals{
 
   //Exam Monday May 6 2024-----------------------------------------------------------------------------------------------------------------
   clouds = ["azure","aws","gcp"]
-  contains_azure = contains.(local.clouds, "Azure")
+  contains_azure = contains(local.clouds, "azure")
   
 
 }
