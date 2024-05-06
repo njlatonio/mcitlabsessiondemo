@@ -289,3 +289,7 @@ output "azure_condition" {        #Question 10
 output "clouds_ext" {        #Question 11
     value = local.clouds_ext
 }
+
+output "cloud_map" {        #Question 12
+    value = local.cloud_map
+}
