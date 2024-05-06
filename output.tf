@@ -259,7 +259,6 @@ output "user_roles_result" {
   value = local.user_role_lookup
 }
 
-*/
 //Homework Friday May 3 2024-----------------------------------------------------------------------------------------------------------
 output "nested_map" {
     value = [for value in var.nested_map:value]
@@ -275,4 +274,13 @@ output "winterlistOfSports_condition" {
 
 output "winterlistOfSports_ext_condition" {
     value = length(var.winterlistOfSports_ext) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
+}
+
+*/
+//Exam Monday May 6 2024------------------------------------------------------------------------------------------------------------
+output "local_clouds" {
+    value = local.clouds
+}
+output "variable_clouds" {
+    value = [for value in var.clouds:clouds]
 }
