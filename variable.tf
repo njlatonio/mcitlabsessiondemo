@@ -173,6 +173,7 @@ variable "nested_numberList" {    #Question 13
   default = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
 }
   
+//Class Monday May 6 2024-----------------------------------------------------------------------------------------------------------------
 variable "name1" {
   type = string
   default = "MCIT_resource_group"
