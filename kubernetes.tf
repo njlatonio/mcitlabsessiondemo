@@ -2,7 +2,11 @@
 locals{ 
   cluster_names=["k8batcha06","k9batcha06","k10batcha06","k11batcha06","k12batcha06"]
 }
-resource "azurerm_resource_group" "nichelle_azureresourcegroup" {
-  name     = var.name
-  location = var.location
+resource "azurerm_resource_group" "nichelle_azureresourcegroup1" {
+  name     = var.name1
+  location = var.location1
+}
+resource "azurerm_resource_group" "nichelle_azureresourcegroup2" {
+  name     = var.name2
+  location = var.location2
 }
