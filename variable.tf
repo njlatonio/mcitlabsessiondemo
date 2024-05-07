@@ -173,4 +173,12 @@ variable "nested_numberList" {    #Question 13
   default = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
 }
   
+variable "name" {
+  type = string
+  default = "MCIT_resource_group"
+}
 
+variable "location" {
+  type = string
+  default = "canadacentral"
+}
