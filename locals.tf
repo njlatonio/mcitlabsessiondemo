@@ -69,5 +69,9 @@ locals{
   cloud_map = { for index, cloud in local.clouds : cloud => local.cloud_owners[index] } #Question 12
   flatten_number_list = flatten(var.nested_numberList)  #Question 13
 
+  //Class Monday May 6 2024----------------------------------------------------------------------------------------------------------------
+  loc_name = another_resource_group
+  loc_location = Sweden
+  
 }
 
