@@ -276,7 +276,6 @@ output "winterlistOfSports_ext_condition" {
     value = length(var.winterlistOfSports_ext) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
 }
 
-*/
 //Exam Monday May 6 2024------------------------------------------------------------------------------------------------------------
 output "clouds" {        #Question 10
     value = local.clouds
@@ -306,3 +305,4 @@ output "sum_flatten_number_list" {        #Question 13
     value = sum(local.flatten_number_list)
 }
 
+*/
