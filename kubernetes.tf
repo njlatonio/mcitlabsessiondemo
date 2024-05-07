@@ -7,6 +7,6 @@ resource "azurerm_resource_group" "nichelle_azureresourcegroup1" {
   location = var.location1
 }
 resource "azurerm_resource_group" "nichelle_azureresourcegroup2" {
-  name     = var.name2
-  location = var.location2
+  name     = local.loc_name
+  location = local.loc_location
 }
