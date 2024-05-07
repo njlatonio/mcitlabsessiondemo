@@ -1,4 +1,4 @@
-
+//Class Monday May 6 2024----------------------------------------------------------------------------------------------------------------
 resource "azurerm_resource_group" "nichelle_azureresourcegroup1" {
   name     = var.name1
   location = var.location1
