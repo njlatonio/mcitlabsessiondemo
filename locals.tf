@@ -73,6 +73,9 @@ locals{
   cluster_names=["k8batcha06","k9batcha06","k10batcha06","k11batcha06","k12batcha06"]
   loc_name = "another_resource_group"
   loc_location = "australiacentral"
-  
+
+  //Class Wednesday May 8 2024-------------------------------------------------------------------------------------------------------------
+  cluster_names=["test1","test2","test3","test4","test5"]
+
 }
 
