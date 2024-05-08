@@ -188,3 +188,8 @@ variable "location1" {
 variable "clusterlist" {
   default = ["montrealcluster", "torontocluster", "vancouvercluster", "albertacluster"]
 }
+
+variable "prefix1"{
+ type=string
+ default="ccrf2301"
+}
