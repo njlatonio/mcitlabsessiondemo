@@ -75,7 +75,7 @@ locals{
   loc_location = "australiacentral"
 
   //Class Wednesday May 8 2024-------------------------------------------------------------------------------------------------------------
-  cluster_names=["test1","test2","test3","test4","test5"]
+  cluster_names1=["test1","test2","test3","test4","test5"]
 
 }
 
