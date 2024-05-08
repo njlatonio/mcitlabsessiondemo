@@ -1,4 +1,5 @@
 //Class Monday May 6 2024----------------------------------------------------------------------------------------------------------------
+/*
 resource "azurerm_resource_group" "nichelle_azureresourcegroup1" {
   name     = var.name1
   location = var.location1
@@ -31,6 +32,7 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
   }
  
 }
+*/
 
 //Class Wednesday May 6 2024--------------------------------------------------------------------------------------------------------------
 #Create resource without for_each
@@ -100,6 +102,27 @@ resource "azurerm_kubernetes_cluster" "simplekubernetescluster_3" {
  
 }
 
+#Create resource with for_each
+resource "azurerm_kubernetes_cluster" "kubernetescluster" {
+  for_each            = {for cluster in local.cluster_names1: cluster=>cluster}
+  name                = "${var.prefix}cluster"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks1"
 
+  default_node_pool {
+    name       = "default"
+    node_count = 1
+    vm_size    = "Standard_D2_v2"
+  }
 
+  identity {
+    type = "SystemAssigned"
+  }
+
+ tags = {
+    Environment = "Production"
+  }
+ 
+}
 
