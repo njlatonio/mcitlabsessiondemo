@@ -183,3 +183,8 @@ variable "location1" {
   type = string
   default = "canadacentral"
 }
+
+variable "clusterlist" {
+  type = string
+  default=["montrealcluster","torontocluster","vancouvercluster","albertacluster"]
+}
