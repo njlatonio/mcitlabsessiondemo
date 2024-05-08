@@ -193,3 +193,33 @@ variable "prefix1"{
  type=string
  default="ccrf2301"
 }
+
+variable "dns_prefix"{
+ type=string
+ default="exampleaks1"
+}
+
+variable "default_node_pool_name"{
+ type=string
+ default="default"
+}
+
+variable "default_node_pool_node_count"{
+ type=number
+ default=1
+}
+
+variable "default_node_pool_vm_size"{
+ type=string
+ default="Standard_D2_v2"
+}
+
+variable "identity"{
+ type=string
+ default="SystemAssigned"
+}
+
+variable "environment_tag"{
+ type=string
+ default="Production"
+}
