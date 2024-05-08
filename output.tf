@@ -305,7 +305,6 @@ output "sum_flatten_number_list" {        #Question 13
     value = sum(local.flatten_number_list)
 }
 
-*/
 //Class Monday May 6 2024----------------------------------------------------------------------------------------------------------
 output "id" {
   value = [
@@ -347,3 +346,4 @@ output "host" {
     for cluster in azurerm_kubernetes_cluster.batchabcd: cluster.kube_config.0.host
   ]
 }
+*/
