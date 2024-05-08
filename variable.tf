@@ -184,6 +184,7 @@ variable "location1" {
   default = "canadacentral"
 }
 
+//Class Wednesday May 8 2024-------------------------------------------------------------------------------------------------------------
 variable "clusterlist" {
   type = string
   default=["montrealcluster","torontocluster","vancouvercluster","albertacluster"]
