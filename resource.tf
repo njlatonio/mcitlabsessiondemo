@@ -34,7 +34,7 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 }
 */
 
-//Class Wednesday May 6 2024--------------------------------------------------------------------------------------------------------------
+//Class Wednesday May 8 2024--------------------------------------------------------------------------------------------------------------
 #Create resource without for_each
 resource "azurerm_kubernetes_cluster" "simplekubernetescluster_1" {
   name                = "mcitkubernetescluster1"
