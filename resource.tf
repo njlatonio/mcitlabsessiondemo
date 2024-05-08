@@ -34,8 +34,8 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 
 //Class Wednesday May 6 2024--------------------------------------------------------------------------------------------------------------
 #Create resource without for_each
-resource "azurerm_kubernetes_cluster" "batachabcd_1" {
-  name                = "${var.prefix}cluster"
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster_1" {
+  name                = "mcitkubernetescluster1"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   dns_prefix          = "exampleaks1"
@@ -56,8 +56,8 @@ resource "azurerm_kubernetes_cluster" "batachabcd_1" {
  
 }
 
-resource "azurerm_kubernetes_cluster" "batachabcd_2" {
-  name                = "${var.prefix}cluster"
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster_2" {
+  name                = "mcitkubernetescluster2"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   dns_prefix          = "exampleaks1"
@@ -78,8 +78,8 @@ resource "azurerm_kubernetes_cluster" "batachabcd_2" {
  
 }
 
-resource "azurerm_kubernetes_cluster" "batachabcd_3" {
-  name                = "${var.prefix}cluster"
+resource "azurerm_kubernetes_cluster" "simplekubernetescluster_3" {
+  name                = "mcitkubernetescluster3"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
   dns_prefix          = "exampleaks1"
@@ -99,5 +99,7 @@ resource "azurerm_kubernetes_cluster" "batachabcd_3" {
   }
  
 }
+
+
 
 
