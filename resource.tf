@@ -34,6 +34,28 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
 
 //Class Wednesday May 6 2024--------------------------------------------------------------------------------------------------------------
 #Create resource without for_each
+resource "azurerm_kubernetes_cluster" "batachabcd_1" {
+  name                = "${var.prefix}cluster"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks1"
+
+  default_node_pool {
+    name       = "default"
+    node_count = 1
+    vm_size    = "Standard_D2_v2"
+  }
+
+  identity {
+    type = "SystemAssigned"
+  }
+
+ tags = {
+    Environment = "Production"
+  }
+ 
+}
+
 resource "azurerm_kubernetes_cluster" "batachabcd_2" {
   name                = "${var.prefix}cluster"
   location            = azurerm_resource_group.azureresourcegroup.location
@@ -55,4 +77,27 @@ resource "azurerm_kubernetes_cluster" "batachabcd_2" {
   }
  
 }
+
+resource "azurerm_kubernetes_cluster" "batachabcd_3" {
+  name                = "${var.prefix}cluster"
+  location            = azurerm_resource_group.azureresourcegroup.location
+  resource_group_name = azurerm_resource_group.azureresourcegroup.name
+  dns_prefix          = "exampleaks1"
+
+  default_node_pool {
+    name       = "default"
+    node_count = 1
+    vm_size    = "Standard_D2_v2"
+  }
+
+  identity {
+    type = "SystemAssigned"
+  }
+
+ tags = {
+    Environment = "Production"
+  }
+ 
+}
+
 
