@@ -187,7 +187,7 @@ variable "location1" {
 //Class Wednesday May 8 2024-------------------------------------------------------------------------------------------------------------
 variable "clusterlist" {
   type = list(string)
-  default = ["montrealcluster", "torontocluster", "vancouvercluster", "albertacluster"]
+  default = ["ccrf2301_montrealcluster", "ccrf2301_torontocluster", "ccrf2301_vancouvercluster", "ccrf2301_albertacluster"]
 }
 
 variable "prefix1"{
