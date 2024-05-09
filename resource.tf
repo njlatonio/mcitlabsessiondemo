@@ -127,7 +127,7 @@ resource "azurerm_kubernetes_cluster" "kubernetescluster" {
 }
 
 resource "azurerm_kubernetes_cluster" "citiescluster" {
-  for_each            = {for cluster in var.clusterlist: cluster=>${var.prefix1}cluster}
+  for_each            = "${var.prefix1}"{for cluster in var.clusterlist: cluster=>cluster}
   name                = "${var.prefix1}cluster"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
