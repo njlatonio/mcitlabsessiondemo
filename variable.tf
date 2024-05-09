@@ -229,3 +229,8 @@ variable "clustercitylist" {
   type = list(string)
   default = ["montreal", "toronto", "vancouver", "alberta"]
 }
+
+variable "default_node_pool_vm_size_1"{
+ type=string
+ default="Standard_DS2_v2"
+}
