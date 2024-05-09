@@ -224,3 +224,8 @@ variable "environment_tag"{
  type=string
  default="Production"
 }
+
+variable "clustercitylist" {
+  type = list(string)
+  default = ["montreal", "toronto", "vancouver", "alberta"]
+}
