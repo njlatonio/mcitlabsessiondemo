@@ -185,6 +185,7 @@ variable "location1" {
 }
 
 //Class Wednesday May 8 2024-------------------------------------------------------------------------------------------------------------
+/*
 variable "clusterlist" {
   type = list(string)
   default = ["ccrf2301_montrealcluster", "ccrf2301_torontocluster", "ccrf2301_vancouvercluster", "ccrf2301_albertacluster"]
@@ -234,3 +235,6 @@ variable "default_node_pool_vm_size_1"{
  type=string
  default="Standard_DS2_v2"
 }
+*/
+//Class Monday May 13 2024----------------------------------------------------------------------------------------------------------------
+
