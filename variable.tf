@@ -239,6 +239,7 @@ variable "default_node_pool_vm_size_1"{
 //Class Monday May 13 2024----------------------------------------------------------------------------------------------------------------
 variable "dns_prefix"{
   type=string
+  default="nichelle"
 }
 variable "default_node_pool_name"{
  type=string
