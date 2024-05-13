@@ -237,15 +237,22 @@ variable "default_node_pool_vm_size_1"{
 }
 */
 //Class Monday May 13 2024----------------------------------------------------------------------------------------------------------------
+variable "dns_prefix"{
+  type=string
+}
+variable "default_node_pool_name"{
+ type=string
+}
 variable "default_node_pool_vm_size"{
  type=string
-# default="Standard_D2_v2"
 }
 variable "default_node_pool_node_count"{
  type=number
-# default=1
+}
+variable "identity"{
+ type=string
 }
 variable "environment_tag"{
  type=string
-# default="Production"
 }
+
