@@ -32,7 +32,6 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
   }
  
 }
-*/
 
 //Class Wednesday May 8 2024--------------------------------------------------------------------------------------------------------------
 #Create resource without for_each
@@ -186,3 +185,14 @@ resource "azurerm_kubernetes_cluster_node_pool" "kube1nodepool" {
 */
 
 //Class Monday May 13 2024----------------------------------------------------------------------------------------------------------------
+resource "azurerm_kubernetes_cluster_node_pool" "kube1nodepool" {
+ for_each               = azurerm_kubernetes_cluster.canadacluster
+ name                   = "${each.key}"
+ kubernetes_cluster_id  = each.value.id
+ vm_size                = var.default_node_pool_vm_size
+ node_count             = var.default_node_pool_node_count
+
+  tags = {
+    Environment = var.environment_tag
+  }
+}
