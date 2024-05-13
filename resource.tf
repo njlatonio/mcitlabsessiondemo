@@ -1,5 +1,5 @@
-//Class Monday May 6 2024----------------------------------------------------------------------------------------------------------------
 /*
+//Class Monday May 6 2024----------------------------------------------------------------------------------------------------------------
 resource "azurerm_resource_group" "nichelle_azureresourcegroup1" {
   name     = var.name1
   location = var.location1
@@ -183,3 +183,6 @@ resource "azurerm_kubernetes_cluster_node_pool" "kube1nodepool" {
     Environment = var.environment_tag
   }
 }
+*/
+
+//Class Monday May 13 2024----------------------------------------------------------------------------------------------------------------
