@@ -1,4 +1,5 @@
 //Class Friday May 10 2024------------------------------------------------------------------------------------------------------------------
+/*
 locals{
   linux_app=[for f in fileset("${path.module}/linuxappconfiguration", "[^_]*.yaml") : yamldecode(file("${path.module}/linuxappconfiguration/${f}"))]
   linux_app_list = flatten([
@@ -31,3 +32,4 @@ resource "azurerm_linux_web_app" "batcha06webapp" {
 
   site_config {}
 }
+*/
